@@ -43,14 +43,12 @@
         ]
       }
     ],
-    "no-console": [
-      true,
+    "no-console": [true,
       "debug",
       "info",
       "time",
       "timeEnd",
-      "trace"
-    ],
+      "trace"],
     "no-empty": false,
     "no-inferrable-types": [
       true,
