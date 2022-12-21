@@ -3,7 +3,7 @@
     <button class="btn btn-success">New Recipe</button>
   </div>
 </div>
-<div class="row" *ngFor="let single of recipe">
+<div class="row" *ngFor="let recipe of recipes">
   <app-recipe-item name={{single.name}} description={{single.description}} image={{single.imagePath}}></app-recipe-item>
 </div>
 
