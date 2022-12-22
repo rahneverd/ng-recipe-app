@@ -10,6 +10,5 @@ export class AppComponent {
   display = 'recipes'
   toBeDisplayed(data) {
     this.display = data
-    console.log(data)
   }
 }
