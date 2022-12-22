@@ -2,8 +2,9 @@
   <div class="col-xs-12">
     <button class="btn btn-success">New Recipe</button>
   </div>
+  <hr>
 </div>
 <div class="row" *ngFor="let recipe of recipes">
-  <app-recipe-item name={{single.name}} description={{single.description}} image={{single.imagePath}}></app-recipe-item>
+  <app-recipe-item [name]="recipe.name" [description]="recipe.description" [image]="recipe.imagePath"></app-recipe-item>
 </div>
 
