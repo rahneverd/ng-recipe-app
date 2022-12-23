@@ -4,7 +4,7 @@
   </div>
   <hr>
 </div>
-<div class="row" *ngFor="let recipe of recipes">
+<div class="row" *ngFor="let recipe of recipes; let i = index" (click)="sendIndex.emit(recipes[i])">
   <app-recipe-item [name]="recipe.name" [description]="recipe.description" [image]="recipe.imagePath"></app-recipe-item>
 </div>
 
